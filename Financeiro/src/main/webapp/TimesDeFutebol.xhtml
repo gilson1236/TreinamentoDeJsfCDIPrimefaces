@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Times de Futebol</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:outputLabel value="Time de Futebol Favorito: " for="timeFutebol" />
+		<h:selectManyListbox value="#{cadastroTorcedorBean.timeFavorito}"
+			id="timeFutebol" size="4">
+			<f:selectItem itemValue="Corinthians" itemLabel="Timão" />
+			<f:selectItem itemValue="Flamengo" itemLabel="Mengão" />
+			<f:selectItem itemValue="Palmeiras"
+				itemLabel="Que não tem mundial nem copinha" />
+			<f:selectItem itemValue="Santos" />
+			<f:selectItem itemValue="São Paulo" />
+			<f:selectItem itemValue="Vasco" itemLabel="Vascão" />
+			<f:selectItem itemValue="Outro" />
+		</h:selectManyListbox>
+	</h:form>
+</h:body>
+</html>
